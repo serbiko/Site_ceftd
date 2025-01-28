@@ -1,0 +1,257 @@
+/* Resetando margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c3ad99;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+body {
+    margin: 0;
+    padding-top: 114px;
+    font-family: Arial, sans-serif;
+    background-color: #f0e6d6;
+}
+
+/* Estilos do Letreiro */
+.letreiro {
+    width: 100%;
+    background-color: #a89275;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos da Imagem e do Texto Sobreposto */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.action-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 40%;
+}
+
+.text-overlay h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #f0e6d6; /* Cor clara para o título */
+}
+
+.text-overlay p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Seção de Contato */
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 0;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+}
+
+.contact-column {
+    width: 30%;
+    text-align: center;
+}
+
+.contact-column h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #a89275;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contact-column p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-column strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #a89275;
+}
+
+/* Estilos dos links de redes sociais */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.social-link:hover {
+    color: #a89275;
+}
+
+/* Estilos para a Seção com as Colunas de Ação Social */
+.social-actions {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.action-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0e6d6;
+    border: 2px solid #a89275; /* Borda em torno da coluna */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.action-column h2 {
+    font-size: 22px;
+    color: #a89275;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o título */
+}
+
+.action-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: none; /* Garante que o texto não fique todo em caixa alta */
+}
+
+/* Melhora o espaçamento e a hierarquia visual dos parágrafos */
+.action-column p:last-child {
+    margin-bottom: 0; /* Remove o espaçamento inferior do último parágrafo */
+}
+
+/* Efeito ao passar o mouse */
+.action-column:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Separador para mudança de assunto */
+.section-divider {
+    border: none;
+    height: 3px;
+    background-color: #a89275;
+    margin: 50px 0;
+}
+
+/* Estilos da seção "Precisamos de sua Ajuda" */
+.help-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.help-content {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.help-content h2 {
+    font-size: 28px;
+    color: #a89275;
+    margin-bottom: 15px;
+}
+
+.help-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: justify;
+}
+
+.help-image {
+    width: 35%;
+}
+
+.help-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
